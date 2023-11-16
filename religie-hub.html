@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Religie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <navbar>
+    <div class="dropdown">
+      <div class="icon-container">
+        <i class="fas fa-bars icon" onclick="toggleIcon(this)"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <span href="index.html">Materie
+          <ul>
+            <li><a href="istorie-hub.html">Istorie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="romana-hub.html">Limba și literatura română
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="stinte-hub.html">Științe
+              <ul>
+                <li>Parcul National Domogled</li>
+              </ul>
+            </a></li>
+            <li><a href="latina-hub.html">Latină
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="lb-engleza-hub.html">Limba engleză
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="geografie-hub.html">Geografie
+              <ul>
+                <li>Megatsunamiul din 1958 din golful Lituya</li>
+              </ul>
+            </a></li>
+            <li><a href="muzica-hub.html">Muzică
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="literatură-universală-hub.html">Literatură universală
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="sociologie-hub.html">Sociologie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="economie-hub.html">Economie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="lb-franceza-hub.html">Limba franceză
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="religie-hub.html">Religie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <a href="index.html" style="cursor: pointer;"><img id="logo" src="poze/Logo.png"></a>
+    <div style="display: flex;justify-content: left;width: 100%;align-items: center;" id="search-bar-size">
+      <div class="search-container" id="search-bar-resolution">
+        <div style="display: flex;justify-content: center;position: relative;" id="mobile-resolution">
+          <i class="fa fa-search" aria-hidden="true" id="search-icon"></i>
+          <input type="text" id="search-input" class="search-input" placeholder="Caută proiect" autocomplete="off">
+          <div style="padding-right: 10px;" id="vizibil">
+            <p style="color:black;display: flex;align-items: center;margin: 0px;height: 35px;">Press "n" for shortcut</p>
+          </div>
+        </div>
+        <div id="suggestions-container" class="suggestions-container"></div>
+        <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+      </div>
+      <script src="search-bar.js"></script>
+      <script src="shortcut.js"></script>
+    </div>
+  </navbar>
+  <div class="content"></div>
+  <script src="proiect_1.js"></script>
+</body>
+</html>
