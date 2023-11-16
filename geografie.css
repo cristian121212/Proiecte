@@ -6,6 +6,7 @@ html {
   margin: 0px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   overflow: hidden;
   scroll-behavior: smooth;
 }
+
 
 * {
   font-family:  "Open Sans", Arial, sans-serif;
@@ -403,6 +405,11 @@ p {
   margin-top: 30vh;
 }
 
+#Cenotaph-pick {
+  height: 70vh;
+  width: 90%;
+}
+
 @media (width < 1000px) {
   .slide {
     height: 7vh;
@@ -533,5 +540,13 @@ p {
   .title {
     width: 100%;
   }
-}
 
+  html {
+    height: auto;
+  }
+
+  #Cenotaph-pick {
+    height: 40vh;
+    width: 100%;
+  }
+}
