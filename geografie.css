@@ -470,18 +470,18 @@ p {
   }
 }
 
-@media screen and (max-device-width : 768px)  {
+@media (width < 768px)  {
   .ocean {
     display: none;
   }
 
-  .display-off {
+
+  span ul li:hover ul li{
     display: none;
-    margin: 0px;
   }
 }
 
-@media screen and (max-device-width : 624px)  {
+@media (width < 624px)  {
   #vizibil {
     display: none;
   }
@@ -531,10 +531,6 @@ p {
 
   .image-container img  {
     width: 100%;
-  }
-
-  .image-container {
-    display: block;
   }
 
   .title {
