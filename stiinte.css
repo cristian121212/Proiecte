@@ -4,16 +4,17 @@ html {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  color: #f0f0f0;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
-  background-color:  #DFF6EA;
+  background-color:  #333333;
   overflow: hidden;
   scroll-behavior: smooth;
+  height: 200svh;
+  position: relative;
 }
 
 * {
@@ -23,7 +24,7 @@ body {
 }
 
 navbar {
-  background-color: #fffff8;
+  background-color: #131212;
   display: block;
   padding: 5px 10px;
   height: 10vh;
@@ -61,13 +62,13 @@ navbar {
   padding-left: 2px;
   border-radius: 0px 5px 5px 0px;
   transition: all 0.3s ease;
-  color: #FCFCFC;
-  border: solid black 1px;
+  color: #f0f0f0;
+  border: solid #f0f0f0 1px;
   border-left: none;
 }
 
 ::placeholder {
-  color: black;
+  color: #f0f0f0;
   opacity: 1; /* Firefox */
 }
 
@@ -91,12 +92,12 @@ navbar {
   background-color: transparent;
   width: 30vw;
   max-width: 550px;
-  z-index: 1000000;
+  z-index: 100;
 }
 
 li {
   list-style-type: none;
-  z-index: 1000000000000;
+  z-index: 100;
 }
 
 .suggestions-container  li{
@@ -107,7 +108,7 @@ li {
   background-color: white;
   font-size: 24px;
   color: black;
-  z-index: 1000000000000000000000;
+  z-index: 100;
 }
 
 .suggestions-container  li:hover{
@@ -238,14 +239,14 @@ span ul li:hover ul li{
 
 #search-icon {
   background-color: rgb(177, 177, 177);
-  color:#706062;
+  color:#f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 35px;
   height: 35px;
   border-radius: 5px 0px 0px 5px;
-  border: solid 1px black;
+  border: solid 1px #f0f0f0;
 }
 
 .icon-container {
@@ -258,23 +259,109 @@ span ul li:hover ul li{
 .icon {
   margin: 10px;
   cursor: pointer;
-  color: black;
+  color: #f0f0f0;
   font-size: 40px;
   display: flex;
   align-items: center;
 }
 
+.main-body {
+  padding: 0px 10px;
+}
+
 .main-title {
-  margin-top: 10vh;
+  margin-top: calc(10svh + 11px);
   height: 60vh;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px #f0f0f0
 }
 
 .main-title img {
-  width: 100vw;
+  height: 60svh;
+  width: 50vw;
+  filter: blur(3px) brightness(0.5);
 }
 
 #vizibil p {
   font-size: 1em;
+}
+
+.first-container {
+  width: 50vw;
+  height: 60svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left:solid #f0f0f0 2px;
+  background-image: radial-gradient(circle,#333333,#1d1d1d, #0f0f0f );
+}
+
+.first-container h1 {
+  text-align: center;
+  font-size: 2.6em;
+  font-weight: 700;
+}
+
+.second-container h1 {
+  display: flex;
+  justify-content: center;
+  padding:30px 0px;
+  font-size: 2.4em;
+}
+
+.second-container p {
+  font-size: 1.3em;
+}
+
+.right-side{
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side img {
+  width: 55vw;
+  height: 50vh;
+  object-fit: fill;
+  border-radius: 20px;
+  cursor:grab;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.right-side i {
+  margin-right: 40px;
+}
+
+.slide-container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.slide {
+  width: 100%;
+  height: 50vh;
+  padding: 0px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  transform: translateX(100%);
+  z-index: 1;
+}
+
+.slide.active {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
 }
 
 @media (width < 1000px) {
@@ -305,7 +392,13 @@ span ul li:hover ul li{
   }
 }
 
-@media screen and (max-device-width : 624px)  {
+@media (width < 768px)  {
+  span ul li:hover ul li{
+    display: none;
+  }
+}
+
+@media (width < 624px)  {
   #vizibil {
     display: none;
   }
@@ -335,4 +428,3 @@ span ul li:hover ul li{
     right: -40vw;
   }
 }
-
