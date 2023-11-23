@@ -126,14 +126,14 @@
       <img class="megatsunamiPic" src="poze/megatsunami.jpg" style="background-color: black;">
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script class="display-off">
+    <script>
       $(window).on('scroll', function () {
         var ocean = $('.megatsunamiPic');
         var scrollPosition = $(this).scrollTop();
         var windowHeight = $(this).height();
   
         // Calculate the opacity based on the scroll position
-        var opacity = 0 + scrollPosition / (windowHeight / 1);
+        var opacity = -0.01 + scrollPosition / (windowHeight / 1);
   
         // Apply the opacity to fade out the wave
         ocean.css('opacity', opacity);
@@ -143,42 +143,36 @@
     <p><span style="margin-left: 20px;">&#8728; Tsunami-ul</span> considerat a fi cel mai mare din istorie a avut loc pe 9 iulie 1958 în <a href="Golful Lituya.html">Golful Lituya</a> , Alaska. Fenomenul a apărut din cauza unui cutremur care a avut între 7,9 si 8.3 grade pe scara Richter. Valul a distrus vegetația de pe unul din flancuri până la o înălțime estimată la 525 de metri, ceea ce îl face unul dintre cele  cele mai importante tsunami observate de către om.</p>
     <p><span style="margin-left: 20px;">&#8728; Cu</span> toate acestea, această caracteristică este moderată de faptul că nu valul în sine a fost de 525m înălțime, ci revărsarea, ceea ce poate denatura în mod semnificativ măsurătorile.</p>
     <div class="image-container">
-      <img class="diagrama" src="poze/Diagrama.png" style="margin-right: 40px;">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <img class="diagrama" src="poze/Diagrama.png" style="margin-right: 20px;">
       <div class="display-off">
         <script>
-          if (screen.width > 700) {
-            $(window).on('scroll', function () {
-              var ocean = $('.diagrama');
-              var scrollPosition = $(this).scrollTop();
-              var windowHeight = $(this).height();
+          $(window).on('scroll', function () {
+            var ocean = $('.diagrama');
+            var scrollPosition = $(this).scrollTop();
+            var windowHeight = $(this).height();
     
-              // Calculate the opacity based on the scroll position
-              var margin = -3000 + scrollPosition / (windowHeight / 2400);
+            // Calculate the opacity based on the scroll position
+            var margin = -3000 + scrollPosition / (windowHeight / 2400);
     
-              // Apply the opacity to fade out the wave
-              ocean.css('margin-left', margin);
-            });
-          }
+            // Apply the opacity to fade out the wave
+            ocean.css('margin-left', margin);
+          });
         </script>
       </div>
-      <img class="diagrama1" src="poze/Diagrama-1.png">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <img class="diagrama1" src="poze/Diagrama-1.png" style="margin-left: 20px;">
       <div class="display-off">
         <script>
-          if (screen.width > 700) {
-            $(window).on('scroll', function () {
-              var ocean = $('.diagrama1');
-              var scrollPosition = $(this).scrollTop();
-              var windowHeight = $(this).height();
+          $(window).on('scroll', function () {
+            var ocean = $('.diagrama1');
+            var scrollPosition = $(this).scrollTop();
+            var windowHeight = $(this).height();
     
-              // Calculate the opacity based on the scroll position
-              var margin = -3000 + scrollPosition / (windowHeight / 2400);
+            // Calculate the opacity based on the scroll position
+            var margin = -3000 + scrollPosition / (windowHeight / 2400);
     
-              // Apply the opacity to fade out the wave
-              ocean.css('margin-right', margin);
-            });
-          }
+            // Apply the opacity to fade out the wave
+            ocean.css('margin-right', margin);
+          });
         </script>
       </div>
     </div>
@@ -206,5 +200,6 @@
     </div>
   </div>
   <p style="display: flex;align-items: center;height: 50px;width: 80%;padding: 0px 10%;color: white;background-color: #0f0e27;margin: 0px;">© Blaga 11B "Ene Cristian". Toate drepturile rezervate.</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
