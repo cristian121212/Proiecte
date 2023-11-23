@@ -159,6 +159,25 @@ button {
 }
 
 
+#nextBtn img,#prevBtn img {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  width:4vw;
+  aspect-ratio: 1/1;
+  height: auto;
+}
+
+.slider-frame {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5% 2% 5%;
+  background-color: #f0f0f0;
+}
+
+
 img {
   height: 100px;
 }
@@ -530,7 +549,23 @@ span ul li:hover ul li{
   }
 }
 
-@media screen and (max-device-width : 624px)  {
+@media (width < 768px)  {
+  span ul li:hover ul li{
+    display: none;
+  }
+
+  #nextBtn img,#prevBtn img {
+    width: 6vw;
+  }
+
+  .slider-frame {
+    width: 100%;
+    padding: 0px;
+
+  }
+}
+
+@media (width < 624px)  {
   #vizibil {
     display: none;
   }
