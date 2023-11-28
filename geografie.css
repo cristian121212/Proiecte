@@ -242,10 +242,6 @@ span ul li:hover ul li{
   z-index: 100000000;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 #search-icon {
   background-color: rgb(177, 177, 177);
   color:#706062;
@@ -278,6 +274,11 @@ h2 {
   font-size: 2.5em;
   font-weight: 700;
   letter-spacing: 1.2px;
+}
+
+b {
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .ocean {
@@ -470,6 +471,16 @@ p {
   }
 }
 
+@media screen and (width < 768px) {
+  .diagrama ,.diagrama1 {
+    margin: 0px;
+  }
+
+  .image-container {
+    display: block;
+  }
+}
+
 @media (width < 768px)  {
   .ocean {
     display: none;
@@ -478,6 +489,14 @@ p {
 
   span ul li:hover ul li{
     display: none;
+  }
+
+  .image-container img {
+    height: 250px;
+  }
+
+  .video {
+    width: 100%;
   }
 }
 
