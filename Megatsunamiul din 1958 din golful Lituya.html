@@ -13,7 +13,7 @@
 </head>
 <body>
   <navbar>
-    <div class="dropdown">
+    <div class="dropdown" onclick="toggleDropdown()">
       <div class="icon-container">
         <i class="fas fa-bars icon" onclick="toggleIcon(this)"></i>
       </div>
@@ -90,6 +90,7 @@
       </div>
       <script src="search-bar.js"></script>
       <script src="shortcut.js"></script>
+      <script src="navbar-button.js"></script>
     </div>
   </navbar>
   <div style="margin-top: calc(10vh + 10px);"><span></span></div>
@@ -140,39 +141,48 @@
       });
     </script>
     <h4 style="font-size: 1.7em;font-weight: 700;border-bottom: 1px solid black;margin-bottom: 10px;">Ce a fost acest megatsunami?</h4>
-    <p><span style="margin-left: 20px;">&#8728; Tsunami-ul</span> considerat a fi cel mai mare din istorie a avut loc pe 9 iulie 1958 în <a href="Golful Lituya.html">Golful Lituya</a> , Alaska. Fenomenul a apărut din cauza unui cutremur care a avut între 7,9 si 8.3 grade pe scara Richter. Valul a distrus vegetația de pe unul din flancuri până la o înălțime estimată la 525 de metri, ceea ce îl face unul dintre cele  cele mai importante tsunami observate de către om.</p>
+    <p><span style="margin-left: 20px;">&#8728; Tsunami-ul</span> considerat a fi cel mai mare din istorie a avut loc pe 9 iulie 1958 în <a href="Golful Lituya.html">Golful Lituya</a> , Alaska. Fenomenul a apărut din cauza unui cutremur care a avut între 7,9 si 8.3 grade pe scara Richter. Valul a distrus vegetația de pe unul din flancuri. Valul a avut o inalțime initiala estimată la 525 de metri, ceea ce îl face unul dintre cele  cele mai importante tsunami observate de către om.</p>
     <p><span style="margin-left: 20px;">&#8728; Cu</span> toate acestea, această caracteristică este moderată de faptul că nu valul în sine a fost de 525m înălțime, ci revărsarea, ceea ce poate denatura în mod semnificativ măsurătorile.</p>
     <div class="image-container">
-      <img class="diagrama" src="poze/Diagrama.png" style="margin-right: 20px;">
+      <img class="diagrama" src="poze/Diagrama.png">
       <div class="display-off">
         <script>
-          $(window).on('scroll', function () {
-            var ocean = $('.diagrama');
-            var scrollPosition = $(this).scrollTop();
-            var windowHeight = $(this).height();
-    
-            // Calculate the opacity based on the scroll position
-            var margin = -3000 + scrollPosition / (windowHeight / 2400);
-    
-            // Apply the opacity to fade out the wave
-            ocean.css('margin-left', margin);
-          });
+          if(window.screen.availWidth < 768) {
+            $(window).on('scroll', function () {
+              var ocean = $('.diagrama');
+              var scrollPosition = $(this).scrollTop();
+              var windowHeight = $(this).height();
+      
+              // Calculate the opacity based on the scroll position
+              var margin = -3000 + scrollPosition / (windowHeight / 2400);
+      
+              // Apply the opacity to fade out the wave
+              ocean.css('margin-left', margin);
+            });
+          }else {
+            return;
+          }
+
         </script>
       </div>
-      <img class="diagrama1" src="poze/Diagrama-1.png" style="margin-left: 20px;">
+      <img class="diagrama1" src="poze/Diagrama-1.png">
       <div class="display-off">
         <script>
-          $(window).on('scroll', function () {
-            var ocean = $('.diagrama1');
-            var scrollPosition = $(this).scrollTop();
-            var windowHeight = $(this).height();
-    
-            // Calculate the opacity based on the scroll position
-            var margin = -3000 + scrollPosition / (windowHeight / 2400);
-    
-            // Apply the opacity to fade out the wave
-            ocean.css('margin-right', margin);
-          });
+          if(window.screen.availWidth < 768) {
+            $(window).on('scroll', function () {
+              var ocean = $('.diagrama1');
+              var scrollPosition = $(this).scrollTop();
+              var windowHeight = $(this).height();
+      
+              // Calculate the opacity based on the scroll position
+              var margin = -3000 + scrollPosition / (windowHeight / 2400);
+      
+              // Apply the opacity to fade out the wave
+              ocean.css('margin-right', margin);
+            });
+          }else {
+            return;
+          }
         </script>
       </div>
     </div>
@@ -182,11 +192,11 @@
     <p><span style="margin-left: 20px;">&#8728; Înălțimea</span> valului s-a estimat la 60m. Pagubele sunt în mare parte reprezentate de îndepărtarea a vegetației de-a lungul țărmului și decopertarea solului.</p>
     <p><span style="margin-left: 20px;">&#8728; Aflate</span> în partea <a href="Cenotaph.html">insulei Cenotaf</a>, trei bărci de pescuit au fost măturate de un val uriaș, omorând două până la cinci persoane. Una dintre bărci a fost găsită goală în golf, iar alta a dispărut complet; a treia, ocupată de un tată și fiul său, a trecut peste insula Cenotaf, a fost aruncată în ocean și apoi, când refluxul a revenit, în interiorul golfului.</p>
     <h4 style="font-size: 1.7em;font-weight: 700;border-bottom: 1px solid black;margin-bottom: 10px;">Măsuri:</h4>
-    <p><span style="margin-left: 20px;">&#8728; Sisteme</span> avansate de avertizare a tsunami-urilor: S-au dezvoltat și implementat sisteme de avertizare a tsunami-urilor la nivel global, care monitorizează activitatea seismică și alertează populația cu privire la pericolul tsunami-ului iminent.</p>
-    <p><span style="margin-left: 20px;">&#8728; Îmbunătățirea</span> infrastructurii de siguranță: Au fost implementate măsuri de construcție a barajelor și digurilor de protecție în zonele expuse pentru a reduce impactul unui posibil tsunami.</p>
-    <p><span style="margin-left: 20px;">&#8728; Educație</span> și antrenament: Comunitățile din zonele de coastă au fost educate cu privire la semnele și comportamentul tsunami-urilor, iar simulările și exercițiile de evacuare au devenit o parte importantă a pregătirii pentru astfel de evenimente.</p>
-    <p><span style="margin-left: 20px;">&#8728; Planuri</span> de evacuare și alerte timpurii: Au fost elaborate și implementate planuri de evacuare în caz de tsunami, iar populația a fost instruită cu privire la modul de acțiune în cazul în care primește o alertă de tsunami iminent.</p>
-    <p><span style="margin-left: 20px;">&#8728; Cercetare</span> și monitorizare continuă: O atenție sporită a fost acordată cercetării continue și monitorizării activității seismice și a altor fenomene naturale care ar putea declanșa un tsunami.</p>
+    <p><span style="margin-left: 20px;">&#8728; <b>Sisteme</span> avansate de avertizare a tsunami-urilor:</b> S-au dezvoltat și implementat sisteme de avertizare a tsunami-urilor la nivel global, care monitorizează activitatea seismică și alertează populația cu privire la pericolul tsunami-ului iminent.</p>
+    <p><span style="margin-left: 20px;">&#8728; <b>Îmbunătățirea</span> infrastructurii de siguranță:</b> Au fost implementate măsuri de construcție a barajelor și digurilor de protecție în zonele expuse pentru a reduce impactul unui posibil tsunami.</p>
+    <p><span style="margin-left: 20px;">&#8728; <b>Educație</span> și antrenament:</b> Comunitățile din zonele de coastă au fost educate cu privire la semnele și comportamentul tsunami-urilor, iar simulările și exercițiile de evacuare au devenit o parte importantă a pregătirii pentru astfel de evenimente.</p>
+    <p><span style="margin-left: 20px;">&#8728; <b>Planuri</span> de evacuare și alerte timpurii:</b> Au fost elaborate și implementate planuri de evacuare în caz de tsunami, iar populația a fost instruită cu privire la modul de acțiune în cazul în care primește o alertă de tsunami iminent.</p>
+    <p><span style="margin-left: 20px;">&#8728; <b>Cercetare</span> și monitorizare continuă:</b> O atenție sporită a fost acordată cercetării continue și monitorizării activității seismice și a altor fenomene naturale care ar putea declanșa un tsunami.</p>
     <h4 style="font-size: 1.7em;font-weight: 700;border-bottom: 1px solid black;margin-bottom: 10px;">Pentru a urmarii o prezentare scurta, accesatii link-ul de mai jos!</h4>
     <p><span style="margin-left: 20px;"><a href="https://www.youtube.com/watch?v=Va5uIvY8qlM&t=599s&ab_channel=Underworld">Click</a>(8:05)</p>
     <h2 style="display: flex;justify-content: center;text-decoration: underline;margin-bottom: 30px;margin-top: 20px;">Surse</h2>
@@ -199,7 +209,7 @@
       </div>
     </div>
   </div>
-  <p style="display: flex;align-items: center;height: 50px;width: 80%;padding: 0px 10%;color: white;background-color: #0f0e27;margin: 0px;">© Blaga 11B "Ene Cristian". Toate drepturile rezervate.</p>
+  <p style="display: flex;align-items: center;height: 50px;width: 80%;padding: 0.5% 10%;color: white;background-color: #0f0e27;margin: 0px;">© Blaga 11B "Ene Cristian". Toate drepturile rezervate.</p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
