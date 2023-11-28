@@ -415,10 +415,6 @@ span ul li:hover ul li{
   z-index: 100000000;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 #search-icon {
   background-color: rgb(177, 177, 177);
   color:#706062;
