@@ -13,7 +13,7 @@
 </head>
 <body>
   <navbar>
-    <div class="dropdown">
+    <div class="dropdown" onclick="toggleDropdown()">
       <div class="icon-container">
         <i class="fas fa-bars icon" onclick="toggleIcon(this)"></i>
       </div>
@@ -30,7 +30,8 @@
               </ul>
             </a></li>
             <li><a href="stinte-hub.html">Științe
-              <ul style="display: none;">
+              <ul>
+                <li>Parcul National Domogled</li>
               </ul>
             </a></li>
             <li><a href="latina-hub.html">Latină
@@ -89,13 +90,14 @@
       </div>
       <script src="search-bar.js"></script>
       <script src="shortcut.js"></script>
+      <script src="navbar-button.js"></script>
     </div>
   </navbar>
   <div style="margin-top: calc(10vh + 30px);"><span></span></div>
   <div style="margin: 0px 30px 30px 30px;">
     <h2 style="display: flex;justify-content: center;text-decoration: underline;margin-bottom: 30px;">Tsunamiul</h2>
     <h4 style="font-size: 1.7em;text-decoration: underline;font-weight: 700;">Definitia tsunamiului:</h4> 
-    <p><span style="margin-left: 20px;">&#8728; Un</span> tsunami este o serie de valuri într-un corp de apă cauzate de deplasarea unui volum mare de apă, în general într-un ocean sau într-un lac mare. Cutremurele, erupțiile vulcanice și alte explozii subacvatice (inclusiv detonații, alunecări de teren, fătări de ghețari, impacturi de meteoriți și alte perturbări) deasupra sau sub apă au toate potențialul de a genera un tsunami. Spre deosebire de valurile obișnuite ale oceanului, care sunt generate de vânt, sau de maree, care sunt la rândul lor generate de atracția gravitațională a Lunii și a Soarelui, un tsunami este generat de deplasarea apei dintr-un eveniment mare.</p>
+    <p><span style="margin-left: 20px;">&#8728; Un</span> tsunami este o serie de valuri într-un corp de apă cauzate de deplasarea unui volum mare de apă, în general într-un ocean sau într-un lac mare. Cutremurele, erupțiile vulcanice și alte explozii subacvatice (inclusiv detonații, alunecări de teren, impacturi de meteoriți și alte perturbări) deasupra sau sub apă au toate potențialul de a genera un tsunami. Spre deosebire de valurile obișnuite ale oceanului, care sunt generate de vânt, sau de maree, care sunt la rândul lor generate de atracția gravitațională a Lunii și a Soarelui, un tsunami este generat de deplasarea apei dintr-un eveniment mare.</p>
     <div class="image-container">
       <img src="poze/tsunami.jpeg">
       <img src="poze/tsunami-1.jpeg">
@@ -110,6 +112,6 @@
       <input class="back-button" type="button" value="Inapoi la megatsunami" onclick="history.go(-1)">
     </form>
   </div>
-  <p style="display: flex;align-items: center;height: 50px;width: 80%;padding: 0px 10%;color: white;background-color: #0f0e27;margin: 0px;">© Blaga 11B "Ene Cristian". Toate drepturile rezervate.</p>
+  <p style="display: flex;align-items: center;height: 50px;width: 80%;padding: 0.5% 10%;color: white;background-color: #0f0e27;margin: 0px;">© Blaga 11B "Ene Cristian". Toate drepturile rezervate.</p>
 </body>
 </html>
