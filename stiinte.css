@@ -13,7 +13,6 @@ body {
   background-color:  #333333;
   overflow: hidden;
   scroll-behavior: smooth;
-  height: 200svh;
   position: relative;
 }
 
@@ -231,10 +230,6 @@ span ul li:hover ul li{
   background-color: #8a8a8a;
   color: #1a1a1a;
   z-index: 100000000;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 #search-icon {
