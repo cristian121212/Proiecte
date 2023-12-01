@@ -147,41 +147,48 @@
       <img class="diagrama" src="poze/Diagrama.png">
       <div class="display-off">
         <script>
-          if(window.screen.availWidth < 768) {
+          if (window.screen.width > 768) {
+            // Your existing code here
             $(window).on('scroll', function () {
               var ocean = $('.diagrama');
               var scrollPosition = $(this).scrollTop();
               var windowHeight = $(this).height();
-      
+
               // Calculate the opacity based on the scroll position
               var margin = -3000 + scrollPosition / (windowHeight / 2400);
-      
+
               // Apply the opacity to fade out the wave
               ocean.css('margin-left', margin);
             });
-          }else {
-            return;
-          }
+          } else if(window.screen.availWidth > 768) {
+            var ocean = $('.diagrama');
+            var margin = 0;
 
+            ocean.css('margin-left', margin);
+          }
         </script>
       </div>
       <img class="diagrama1" src="poze/Diagrama-1.png">
       <div class="display-off">
         <script>
-          if(window.screen.availWidth < 768) {
+          if (window.screen.width > 768) {
+            // Your existing code here
             $(window).on('scroll', function () {
               var ocean = $('.diagrama1');
               var scrollPosition = $(this).scrollTop();
               var windowHeight = $(this).height();
-      
+
               // Calculate the opacity based on the scroll position
               var margin = -3000 + scrollPosition / (windowHeight / 2400);
-      
+
               // Apply the opacity to fade out the wave
               ocean.css('margin-right', margin);
             });
-          }else {
-            return;
+          } else if(window.screen.availWidth > 768) {
+            var ocean = $('.diagrama-1');
+            var margin = 0;
+
+            ocean.css('margin-right', margin);
           }
         </script>
       </div>
