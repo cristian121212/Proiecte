@@ -411,6 +411,10 @@ p {
   width: 90%;
 }
 
+.display-off {
+  display: block;
+}
+
 @media (width < 1000px) {
   .slide {
     height: 7vh;
@@ -478,6 +482,16 @@ p {
 
   .image-container {
     display: block;
+  }
+
+  .display-off {
+    display: none;
+  }
+}
+
+@media (width > 900px) {
+  .diagrama {
+    margin-right: 30px;
   }
 }
 
