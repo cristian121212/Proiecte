@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcul National Domogled</title>
+  <link rel="stylesheet" href="stiinte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body style="background-color: white;">
+  <nav id="nav">
+    <div class="dropdown" onclick="toggleDropdown()">
+      <div class="icon-container">
+        <i class="fas fa-bars icon" onclick="toggleIcon(this)"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <span href="index.html">Materie
+          <ul>
+            <li><a href="istorie-hub.html">Istorie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="romana-hub.html">Limba și literatura română
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="stinte-hub.html">Științe
+              <ul>
+                <li>Parcul National Domogled</li>
+              </ul>
+            </a></li>
+            <li><a href="latina-hub.html">Latină
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="lb-engleza-hub.html">Limba engleză
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="geografie-hub.html">Geografie
+              <ul>
+                <li>Megatsunamiul din 1958 din golful Lituya</li>
+              </ul>
+            </a></li>
+            <li><a href="muzica-hub.html">Muzică
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="literatură-universală-hub.html">Literatură universală
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="sociologie-hub.html">Sociologie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="economie-hub.html">Economie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="lb-franceza-hub.html">Limba franceză
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="religie-hub.html">Religie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <a href="index.html" style="cursor: pointer;"><img id="logo" src="poze/Logo-1.png"></a>
+    <div style="display: flex;justify-content: left;width: 100%;align-items: center;" id="search-bar-size">
+      <div class="search-container" id="search-bar-resolution">
+        <div style="display: flex;justify-content: center;position: relative;" id="mobile-resolution">
+          <i class="fa fa-search" aria-hidden="true" id="search-icon"></i>
+          <input type="text" id="search-input" class="search-input" placeholder="Caută proiect" autocomplete="off">
+          <div style="padding-right: 10px;" id="vizibil">
+            <p style="color:#fafafa;display: flex;align-items: center;margin: 0px;height: 35px;">Press "n" for shortcut</p>
+          </div>
+        </div>
+        <div id="suggestions-container" class="suggestions-container"></div>
+        <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+      </div>
+      <script src="search-bar.js"></script>
+      <script src="shortcut.js"></script>
+      <script src="navbar-button.js"></script>
+    </div>
+  </nav>
+  <script>
+    $(document).ready(function () {
+      // Bind a scroll event to the window
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 500) {
+          $('#nav').hide();
+        } else {
+          $('#nav').show();
+        }
+      });
+    });
+  </script>
+  <div class="main-body" style="margin-top: calc(10svh + 11px);">
+    <h2><u>Informații generale:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> <b>Parcul Național Domogled - Valea Cernei</b> este o arie protejată de interes național ce corespunde categoriei a II-a IUCN (parc național, zonă specială de conservare), situat în partea sud-vestică a României, pe teritoriile județelor Caraș-Severin, Mehedinți și Gorj.</p>
+    <h2 style="font-size: 2em;">a) <u>Locație:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> <b>Aria naturală</b> se află în partea central-estică a județului Caraș-Severin (pe teritoriile administrative ale comunelor: Cornereva, Mehadia, Teregova, Topleț și Zăvoi și al orașului Băile Herculane), cea nord-vestică a județului Gorj (pe teritoriul comunei Padeș și al orașului Tismana) și în cea nord-estică a județului Mehedinți (pe teritoriile comunelor: Balta, Isverna, Obârșia-Cloșani și Podeni) și urmează a fi străbătută de drumul național 66 A, pentru a lega județele Hunedoara și Caraș Severin.</p>
+    <h2 style="font-size: 2em;">b) <u>Descriere:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> Prima propunere de instituire a Parcului Național Domogled - Valea Cernei a avut loc în anul 1990, acesta urmând să fie declarat arie protejată prin Legea nr.5 din 6 martie 2000 (privind aprobarea Planului de amenajare a teritoriului național - Secțiunea a III-a - zone protejate).</p>
+    <p><span style="margin-left: 5%;">&#8210;</span> În anul 2003 prin Hotărârea de Guvern nr. 230 din 4 martie (privind delimitarea rezervațiilor biosferei, parcurilor naționale și parcurilor naturale și constituirea administrațiilor acestora) se restabilesc limitele și suprafața acestuia (61.211 ha).</p>
+    <p><span style="margin-left: 5%;">&#8210;</span> Din punct de vedere geografic, parcul se întinde peste bazinul râului Cerna, de la obârșie până la confluența cu râul Belareca, peste masivul Munților Godeanu și al Munților Cernei (pe versantul drept) și respectiv Munților Vâlcanului și Munților Mehedinți pe versantul stâng.</p>
+    <div style="display: grid;grid-template-columns: 25vw 25vw;gap: 20px;justify-content: center;margin-top: 20px;">
+      <img src="poze/Parcul_Național_Domogled_-_Valea_Cernei.jpg" style="width: 25vw;height: 35svh;">
+      <img src="poze/locatia P.N.png" style="width: 25vw;height: 35svh;">
+      <p style="text-align: center;">Imagine din parc</p>
+      <p style="text-align: center;">Localizarea rezervației pe harta țării</p>
+    </div>
+    <h2 id="fauna-flora" style="margin-top: calc(10svh + 11px);"><u>Faună și floră:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> Parcul național se suprapune atât sitului de importanță comunitară - Domogled - Valea Cernei cât și ariei de protecție specială avifaunistică omonime, la baza desemnării cărora aflându-se câteva specii faunistice și floristice enumerate în anexa I-a a Directivei Consiliului European 92/43/CE din 21 mai 1992 (privind conservarea habitatelor naturale și a speciilor de faună și floră sălbatică).</p>
+    <h2 style="font-size: 2em;">a) <u>Mamifere, reptile, amfibieni, insecte:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> Fauna protejată a parcului are în componență 14 specii de mamifere: urs brun, lup cenușiu, râs eurasiatic, vidra de râu, liliacul cu aripi lungi, liliacul mare cu potcoavă, liliacul cărămiziu, liliacul cu urechi mari, liliacul cu potcoavă a lui Blasius, liliacul mediteranean, liliacul mic cu potcoavă, liliacul comun, liliacul cu urechi de șoarece  și liliacul cu picioare lungi; o reptilă și un amfibian: broasca-țestoasă de uscat și ivorașul-cu-burta-galbenă; șase specii de pești: porcușorul de vad, zglăvoacă, dunăriță, avat, mreană vânătă și chișcarul; precum și 22 specii de nevertebrate: gândacul cu aripi scurte, gândacul auriu, cărăbuș, gândacul sihastru, gândacul de apă, cosașul-de-munte-cu-picioare-roșii, cosașul transilvan, șapte fluturi (din speciile: Leptidea morsei, Nymphalis vaualbum, Gortyna borelii lunata, Euphydryas maturna, Maculinea teleius, Lycaena dispar , Callimorpha quadripunctaria), calul-dracului, rădașca, croitorul mare al stejarului, croitorul cenușiu al stejarului, croitorul alpin, greier, melcul cerenat bănățean  și racul de ponoare.</p>
+    <div style="display: grid;grid-template-columns: 25vw;gap: 20px;justify-content: center;margin-top: 20px;">
+      <img src="poze//RO_CS_Raul_Cerna_(1).JPG" style="width: 25vw;height: 45svh;">
+      <p style="text-align: center;">Cerna aproape de ieșirea din defileu</p>
+    </div>
+    <h2 style="font-size: 2em;">b) <u>Păsări:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> Specii de păsări (enumerate în anexa I-a a Directivei Consiliului European 147/CE din 30 noiembrie 2009, privind conservarea păsărilor sălbatice) protejate semnalate în arealul parcului: fâsă de munte, fâsă de pădure, acvila de munte, caprimulg, șerpar, porumbel de scorbură, cuc, ciocănitoarea de grădină, ciocănitoare cu spate alb, ciocănitoare neagră, presura de grădină, șoim călător, muscar, muscar-gulerat, sfrâncioc roșiatic, ciocârlie-de-pădure, viespar sau ciocănitoarea verzuie.</p>
+    <h2 style="font-size: 2em;">c) <u>Ierburi și flori:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> La nivelul ierburilor sunt întâlnite trei specii de plante (incluse în aceeași anexă a Directivei Europene): papucul doamnei, ouăle popii și clopoțelul de munte; care vegetează alături de alte rarități floristice, printre care: talpa-ursului, brie, tășculiță, iarbă-mare, albăstreaua de munte, pesmă, clopoțeii Cazanelor, cornul bănățean, căpșuniță, orhidee (cu specii de: Cephalanthera longifolia, Dactylorhiza cordigera), căpșuniță-roșie, garofiță de munte, garoafă (din speciile: Dianthus kitaibelii, Dianthus giganteus ssp. banaticus), garofiță albă de stânci, lalea pestriță, sânzienă roșie, mlăștiniță, crin de pădure, moșmon, odogaci, punguliță, băieței (Veronica spicata ssp. crassifolia) sau aerel.</p>
+    <div style="display: grid;grid-template-columns: 25vw;gap: 20px;justify-content: center;margin-top: 20px;">
+      <img src="poze/Himantoglossum_caprinum_Griechenland_249_31.5.jpg" style="width: 25vw;height: 45svh;">
+      <p style="text-align: center;">Ouăle-popii (Himantoglossum caprinum)</p>
+    </div>
+    <h2 id="turism" style="margin-top: calc(10svh + 11px);"><u>Turism:</u></h2>
+    <h2 style="font-size: 2em;">a) <u>Valea Cernei &#8210; istorie, oameni, locuri:</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> Valea Cernei a fost numită cu temei cea mai frumoasă vale din Carpați. Din multe puncte de vedere Valea Cernei este un muzeu viu, cu lecții despre istorie, geologie, relief, climă, vegetație, faună, peisaj și, nu în ultimul rând, despre oameni și așezările lor. Situată într-o zonă de interferențe geotectonice, geologice, climatice, biogeografice și istorice, această vale are un specific unic. Pe stânga este străjuită de Munții Mehedinți, calcaroși, cu suita de elemente ale morfologiei calcaroase, iar pe dreapta de Munții Cernei, mai înalți, mai eterogeni litologic și cu comunități umane cuibărite în unele dintre cele mai izolate sate din România (Ineleț, Prisăcina, Dobraia etc). Au existat astfel argumente multiple și consistente pentru crearea aici a Parcului Național Domogled - Valea Cernei. În cadrul acestuia au fost delimitate, nu mai puțin de zece rezervații naturale. Fiecare componentă naturală a fiecărei rezervații poate fi în sine subiectul unui articol. Toponimia Văii Cernei include câteva denumiri specifice, cum ar fi ciucevele spre obârșia Cernei și a Cernișoarei (Rezervația naturală Ciucevele Cernei, cu Ciuceavea Mare, Ciuceavea Frasinului) și geanțurile, în aval de Cerna Sat (Geanțul Glodului, Geanțul Hermanului). Acestea sunt înălțimi calcaroase, care însoțesc valea, pe care o domină cu 400-500 m diferență de nivel. Un alt toponim frecvent este cel de „crac”, folosit pentru a denumi culmile secundare care coboară din culmea principală a Munților Cernei spre Valea Cernei ( Cracu Vlașcu Mare, Cracu Stânei).Parcul National Domogled-Valea Cernei</p>
+    <section>
+      <div id="slideshow-container1"  class="slideshow-container">
+      
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides1 fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="poze/dsc_0493.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Munții Cernei reflectați în lacul de acumulare Prisaca</div>
+        </div>
+      
+        <div class="mySlides1 fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="poze/dsc_0798.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Ciucevele Cernei și M. Godeanu</div>
+        </div>
+      
+        <div class="mySlides1 fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="poze/dsc_9973.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Pinul negru de Banat</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <script src="main-1.js"></script>
+    <h2 style="font-size: 2em;">b) Băile Herculane &#8210; mărire și decădere</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> Băile Herculane, o stațiune care a stat sub gloria a trei imperii: Imperiul Roman, Imperiul Habsburgic și, în cele din urmă, imperiul dezolării. Putem spune că istoria turismului pe teritoriul României începe aici, pe Valea Cernei, la Apele Sacre ale lui Hercule. Aceasta este stațiunea cu cea mai veche atestare documentară din România, pe o tabula votivă descoperită aici fiind înscris anul 153 d.H. Din păcate, la Băile Herculane, realitatea prezentului nu se ridică la cota valorii trecutului său. De la statut de băi imperiale, vizitate de împăratul roman Caracalla în antichitate, sau de către împărați ai Imperiului Habsburgic, printre care Franz Joseph, a devenit unul dintre locurile îndrăgite de împărăteasa Elisabeta, Sisi.</p>
+    <section>
+      <div id="slideshow-container2" class="slideshow-container">
+      
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="poze/dsc_0464-1.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Hoteluri la Băile Herculane</div>
+        </div>
+      
+       <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="poze/dsc_9706.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Statuia lui Hercule din centrul vechi</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="poze/dsc_9711.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Hercule și dezolarea din jur</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="poze/dsc_9855.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Fațade de clădiri vechi</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+      </div>
+    </section>
+    <h2 style="font-size: 2em;">c) <u>Munții Mehedinți &#8210; munții crovurilor</u></h2>
+    <p><span style="margin-left: 5%;">&#8210;</span> Munții Mehedinți sunt o continuare spre SV a Munților Vâlcan, cea mai joasă diviziune din Grupa Retezat-Godeanu. Sunt cuprinși între Valea Cernei, Dunăre, râul Motru și Podișul Mehedinți. Culmea lor principală este orientată NE-SV și are un profil transversal asimetric, fiind abruptă spre Valea Cernei și domoală spre Podișul Mehedinți. Înălțimile maxime se ridică puțin peste 1300-1400 m. Cel mai înalt vârf este Vârful lui Stan -  1466 m. Sunt fragmentați de văi scurte,  dar puternic adâncite, care își formează sectoare de chei. Nota de personalitate a reliefului este dată de formele carstice, mai ales de exocarst: chei, polii, uvale, doline și lapiezuri. Un alt aspect de specificitate al acestor munți este dat de caracterul meridional (submediteranean) al climei, vegetație și faunei.</p>
+
+    <script src="main-2.js"></script>
+    <section>
+      <div id="slideshow-container3" class="slideshow-container">
+      
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides2 fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="poze/dsc_0160_0.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Munții Godeanu văzuți din M. Mehedinți</div>
+        </div>
+      
+       <div class="mySlides2 fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="poze/dsc_9906.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Poienile Porcului</div>
+        </div>
+      
+        <div class="mySlides2 fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="poze/img_20211023_135405.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Lapiezuri sub Vf. Pietrele Albe</div>
+        </div>
+        <div class="mySlides2 fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="poze/dsc_0791.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Vf. lui Stan, cel mai înalt din M. Mehedinți</div>
+        </div>
+        <div class="mySlides2 fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="poze/dsc_0818.jpg" style="width:100%;max-height: 725px;border-style: solid;border-width: 2px;">
+          <div class="text">Abruptul NE al Vf. lui Stan</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+      </div>
+    </section>
+    
+    <script src="main-3.js"></script>
+  </div>
+  <p style="display: flex;align-items: center;height: 50px;width: 80%;padding: 0.5% 10%;color: white;background-color: #0f0e27;margin: 0px;">© Blaga 11B "Ene Cristian". Toate drepturile rezervate.</p>
+</body>
+</html>
