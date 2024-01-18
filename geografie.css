@@ -406,6 +406,14 @@ p {
   margin-top: 30vh;
 }
 
+#padding-telefon a {
+  font-weight: 600;
+}
+
+#padding-telefon a:hover {
+  color:red;
+}
+
 #Cenotaph-pick {
   height: 70vh;
   width: 90%;
@@ -413,6 +421,12 @@ p {
 
 .display-off {
   display: block;
+}
+
+@media (width < 1400px) {
+  .wave {
+    height: 80%;
+  }
 }
 
 @media (width < 1000px) {
