@@ -1,7 +1,7 @@
 const proiectList = [
   { title: "Megatsunamiul din 1958 din golful Lituya", page: "Megatsunamiul din 1958 din golful Lituya.html" },
   { title: "Golful Lituya", page: "Golful Lituya.html" },
-  { title: "Tsunamiul", page: "ssunami.html" },
+  { title: "Tsunamiul", page: "tsunami.html" },
   { title: "Insula Cenotaph", page: "Cenotaph.html" },
   { title: "Parcul National Domogled", page: "Parc-Nat-Domogled.html" },
 ];
