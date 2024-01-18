@@ -75,7 +75,6 @@ navbar {
   width:100%;
   flex-shrink: 0;
   text-align: center;
-  background-color: #f0f0f0;
   display: flex;
   justify-content: space-around;
   padding: 10px 0px;
@@ -84,14 +83,14 @@ navbar {
 .materie {
   font-weight: 700;
   font-size: 25px;
-  background-color: black;
+  background-color: rgb(26, 26, 26);
   width: 17vw;
   height:20vh;
   position: relative;
   border-radius: 20px;
 }
 .materie:hover div {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .materie:hover span {
@@ -118,7 +117,6 @@ navbar {
   transform: translate(-50%, -50%);
   text-align: center;
   margin-bottom: 10px;
-  border: 1px solid black;
   border-radius: 20px;
   margin: 4px 5px 5px -5px;
 }
