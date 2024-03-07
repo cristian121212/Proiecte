@@ -3,6 +3,7 @@ const proiectList = [
   { title: "Golful Lituya", page: "Golful Lituya.html" },
   { title: "Insula Cenotaph", page: "Cenotaph.html" },
   { title: "Cutremur", page: "Cutremur.html" },
+  { title: "Miguel de Cervates", page: "Miguel-de-Cervantes.html" },
   { title: "Parcul National Domogled", page: "Parc-Nat-Domogled.html" },
 ];
 
