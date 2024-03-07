@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel de Cervantes</title>
+  <link rel="stylesheet" href="Miguel-de-Cervantes.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav id="nav">
+    <div class="dropdown" onclick="toggleDropdown()">
+      <div class="icon-container">
+        <i class="fas fa-bars icon" onclick="toggleIcon(this)"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <span href="index.html">Materie
+          <ul>
+            <li><a href="istorie-hub.html">Istorie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="romana-hub.html">Limba și literatura română
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="stinte-hub.html">Științe
+              <ul>
+                <li>Parcul National Domogled</li>
+              </ul>
+            </a></li>
+            <li><a href="latina-hub.html">Latină
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="lb-engleza-hub.html">Limba engleză
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="geografie-hub.html">Geografie
+              <ul>
+                <li>Megatsunamiul din 1958 din golful Lituya</li>
+              </ul>
+            </a></li>
+            <li><a href="muzica-hub.html">Muzică
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="literatură-universală-hub.html">Literatură universală
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="sociologie-hub.html">Sociologie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="economie-hub.html">Economie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="lb-franceza-hub.html">Limba franceză
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+            <li><a href="religie-hub.html">Religie
+              <ul style="display: none;">
+              </ul>
+            </a></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <a href="index.html" style="cursor: pointer;"><img id="logo" src="poze/logo-2.png"></a>
+    <div style="display: flex;justify-content: left;width: 100%;align-items: center;" id="search-bar-size">
+      <div class="search-container" id="search-bar-resolution">
+        <div style="display: flex;justify-content: center;position: relative;" id="mobile-resolution">
+          <i class="fa fa-search" aria-hidden="true" id="search-icon"></i>
+          <input type="text" id="search-input" class="search-input" placeholder="Caută proiect" autocomplete="off">
+          <div style="padding-right: 10px;" id="vizibil">
+            <p style="color:black;display: flex;align-items: center;margin: 0px;height: 35px;">Press "n" for shortcut</p>
+          </div>
+        </div>
+        <div id="suggestions-container" class="suggestions-container"></div>
+        <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+      </div>
+      <script src="search-bar.js"></script>
+      <script src="shortcut.js"></script>
+      <script src="navbar-button.js"></script>
+    </div>
+  </nav>
+  <script>
+    $(document).ready(function () {
+      // Bind a scroll event to the window
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 500) {
+          $('#nav').hide();
+        } else {
+          $('#nav').show();
+        }
+      });
+    });
+  </script>
+  <div class="margin-top">
+    <div class="container-text" style="background-color: rgb(240,248,255)">
+      <div class="constainre-of-container-1" style="position: relative;">
+        <div>
+          <img src="poze/MDC-poza.png" style="border: solid rgb(255, 255, 255) 14px; border-radius: 100%; background-color: #F9EBE2; box-shadow: 3px 3px 10px 0px rgba(104, 104, 104, 0.1);height: 16vw;aspect-ratio: 1/1;">
+        </div>
+        <div style="margin-left: 5%;">
+          <p style="color: rgb(182, 182, 182);margin-bottom: 1%;">Romancier, dramaturg, poet</p>
+          <h1 style="margin-bottom: 3%;letter-spacing: 1.2px;">Miguel de Cervantes</h1>
+          <p style="line-height: 150%;letter-spacing: 0.5px;margin-bottom: 2%;">Miguel de Cervantes a fost un romancier, poet și dramaturg spaniol, considerat simbolul literaturii spaniole, autorul celebrului roman „Iscusitul hidalgo Don Quijote de La Mancha” sau prescurtat: „Don Quijote de La Mancha”, în spaniolă „El ingenioso hidalgo don Quijote de la Mancha”, („hidalgo” este un reprezentant al micii nobilimi) pe care mulți critici literari l-au considerat primul roman modern și una din cele mai valoroase opere ale literaturii universale. A fost supranumit „Principele ingeniozității”.</p>
+          <a href="Miguel-de-Cervantes-more.html">
+            <button class="button-press">More</button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="invisible-container">
+      <div style="display: flex;justify-content: center;width: 60%;">
+        <div>
+          <h2><u>Viața Lui Miguel de Cervantes</u></h2>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><u>Născut în 1547:</u> Miguel de Cervantes Saavedra s-a născut la Alcalá de Henares, Spania, într-o familie modestă.</b></p>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><u>Experiențe timpurii:</u> A fost educat în Sevilla și Madrid, dar viața sa a fost marcată de instabilitate financiară.</b></p>
+          <div class="wrapper">
+            <div class="text-box">
+              <img class="text-img" src="poze/Hartă a Spaniei.png">
+              <p><span style="margin-left: 5%;">&#8210;</span> <b><u>Captivitatea în Algeria:</u> Miguel de Cervantes și fratele său Rodrigo au fost capturați de o flotă turcească condusă de Arnaut Mamí în timp ce se întorceau din Napoli în Spania la bordul galerei Sol, pe 26 septembrie 1575. Ei au fost duși în Algeria și Cervantes a fost vândut ca sclav renegatului grec Dali Mamí. Cu toate acestea, răpitorii au crezut că era o persoană importantă și au cerut o recompensă de 500 de escudos de aur pentru eliberarea sa. Cervantes a încercat să evadeze de patru ori în cei cinci ani de închisoare și s-a declarat de fiecare dată unicul responsabil pentru a proteja pe ceilalți. După multiple eforturi de strângere a banilor, în cele din urmă, a fost eliberat pe 19 septembrie 1580 și a ajuns în Spania pe 24 octombrie.</b></p>
+            </div>
+          </div>
+          <h2><u>Experiența Militară</u></h2>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><u>Participarea la bătălia de la Lepanto:</u> Cervantes s-a alăturat armatei spaniole și a participat la bătălia de la Lepanto în 1571, unde a fost rănit grav la mână.</b></p>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><u>Rănile și efectele asupra scrierilor sale:</u> Rănile suferite în luptă i-au lăsat urme pe toată viața și i-au influențat abordarea față de viață și literatură.</b></p>
+          <section>
+            <div id="slideshow-container1"  class="slideshow-container">
+      
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides1 fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="poze/Battle_of_Lepanto_1571.jpg" style="width:100%;max-height: 401px;border-style: solid;border-width: 2px;">
+                <div class="text-1">Bătălia de la Lepanto</div>
+              </div>
+            
+              <div class="mySlides1 fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="poze/Seeschlacht_von_Lepanto_von_Pieter_Brünniche.jpg" style="width:100%;max-height: 401px;border-style: solid;border-width: 2px;">
+                <div class="text-1">Bătălia de la Lepanto</div>
+              </div>
+            
+              <div class="mySlides1 fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="poze/Fernando_Bertelli,_Die_Seeschlacht_von_Lepanto,_Venedig_1572,_Museo_Storico_Navale_(550x500).jpg" style="width:100%;max-height: 401px;border-style: solid;border-width: 2px;">
+                <div class="text-1">Bătălia de la Lepanto</div>
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+            </div>
+          </section>
+          <script src="main-1.js"></script>
+          <div class="wrapper">
+            <div class="text-box">
+              <h2><u>Anii de Captivitate</u></h2>
+              <div class="text-img-1">
+                <img  src="poze/Cervates novel">
+                <p>(Manualul Oxford despre Cervantes)</p>
+              </div>
+              <p><b>Captivitatea lui Miguel de Cervantes în Alger a fost o perioadă crucială care a influențat profund atât dezvoltarea personală cât și creația literară a scriitorului. Experiențele de suferință, încercările repetate de evadare și interacțiunea cu diverse culturi în acest mediu cosmopolit i-au modelat perspectiva asupra vieții și a naturii umane. Această perioadă a evidențiat reziliența și curajul lui Cervantes, teme care se regăsesc în lucrările sale, unde eroismul în fața adversității și căutarea demnității umane sunt centralizate. Captivitatea l-a transformat pe Cervantes într-un observator ager al condiției umane și a contribuit la îmbogățirea literaturii prin introducerea unor personaje complexe și situații care reflectă universalitatea experienței umane. Astfel, această perioadă dificilă a fost esențială în formarea lui Cervantes ca scriitor și în influențarea literaturii spaniole și mondiale.</b></p>
+            </div>
+          </div>
+          <h2><u>Contribuții Literare</u></h2>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><span style="font-weight: bold;">Două dintre cele mai remarcabile opere</span> ale lui Miguel de Cervantes Saavedra, "Don Quijote" și "Novelas Ejemplares", ilustrează măiestria și diversitatea creativă a acestui scriitor spaniol de geniu. </b></p>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><span style="font-weight: bold;">"Don Quijote"</span>, publicat în două părți între 1605 și 1615, este recunoscut drept primul roman modern și o capodoperă a literaturii universale. Povestea lui Don Quijote, un nobil sărac obsedat de romanele de cavalerie, care devine el însuși un cavaler înarmat în căutarea aventurii și a justiției, este o meditație profundă asupra naturii umane și a lumii înconjurătoare. </b></p>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><span style="font-weight: bold;">"Novelas Ejemplares"</span> oferă o colecție de povestiri complexe, explorând teme precum dragostea, onoarea și aventura, și reflectând valorile sociale și morale ale epocii. </b></p>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b>Aceste două opere reprezintă monumente ale literaturii spaniole și universale, ilustrând abilitatea lui Cervantes de a captura subtilitatea umanității și profunzimea condiției umane într-o varietate de contexte și personaje.</b></p>
+          <div style="display: grid;grid-template-columns: 30% 30%;gap: 20px;justify-content: center;margin-top: 20px;">
+            <img src="poze/Don Quijote de La Mancha" style="height: 30svh;aspect-ratio: 9/12;place-self: center;">
+            <img src="poze/novelas-ejemplares-volumen-1-book_2699.jpg" style="height: 30svh;aspect-ratio: 9/12;place-self: center;">
+            <p style="text-align: center;font-size: 1.4em;">Don Quijote</p>
+            <p style="text-align: center;font-size: 1.4em;">Novelas Ejemplares</p>
+          </div>
+          <h2><u>Moștenirea</u></h2>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b>Influences pe literatura ulterioară: Lucrările lui Cervantes au influențat o gamă largă de scriitori și artiști, inclusiv <span style="font-weight: bold;">Shakespeare, Dostoevsky și Joyce</span>.</b></p>
+          <p><span style="margin-left: 5%;">&#8210;</span> <b><span style="font-weight: bold;">Recunoașterea globală:</span> Este considerat unul dintre cei mai importanți scriitori din istorie și este adesea comparat cu William Shakespeare ca unul dintre cei mai mari autori ai lumii.</b></p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="invisible.js"></script>
+  
+  </div>
+
+
+  <p style="display: flex;align-items: center;height: 50px;width: 80%;padding: 5px 10%;color: white;background-color: #0f0e27;margin: 0px;">© Blaga 11B "Ene Cristian". Toate drepturile rezervate.</p>
+</body>
+</html>
