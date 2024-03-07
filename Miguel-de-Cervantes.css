@@ -305,6 +305,7 @@ button {
 button:hover {
   --_p: 100%;
   transition: background-position .4s, background-size 0s;
+  cursor: pointer;
 }
 button:active {
   box-shadow: 0 0 9e9q inset rgb(14, 14, 14); 
