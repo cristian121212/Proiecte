@@ -5,6 +5,7 @@ const proiectList = [
   { title: "Cutremur", page: "Cutremur.html" },
   { title: "Miguel de Cervates", page: "Miguel-de-Cervantes.html" },
   { title: "Parcul National Domogled", page: "Parc-Nat-Domogled.html" },
+  { title: "Holocaustul din România", page: "holocaust-din-romania.html" },
 ];
 
 const searchInput = document.getElementById('search-input');
