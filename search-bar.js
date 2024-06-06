@@ -5,7 +5,13 @@ const proiectList = [
   { title: "Cutremur", page: "Cutremur.html" },
   { title: "Miguel de Cervates", page: "Miguel-de-Cervantes.html" },
   { title: "Parcul National Domogled", page: "Parc-Nat-Domogled.html" },
-  { title: "Holocaustul din România", page: "holocaust-din-romania.html" },
+  { title: "Realismul", page: "holocaust-din-romania.html" },
+  { title: "Ion", page: "Ion.html" },
+  { title: "Baltagul", page: "Baltagul.html" },
+  { title: "Morometii", page: "Morometii.html" },
+  { title: "Moara cu Noroc", page: "MCN.html" },
+  { title: "Ultima noapte de dragoste, intaia noapte de razboi", page: "UNDDINDR.html" },
+  { title: "Hanul Ancutei", page: "Hanul Ancutei.html" },
 ];
 
 const searchInput = document.getElementById('search-input');
